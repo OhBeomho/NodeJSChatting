@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Chat</title>
+</head>
+<body>
+	<div class="usernameinput">
+		<h1>NodeJS Chatting</h1>
+		<div class="uinputs">
+			<input type="text" class="name-input"><br/>
+			<button onclick="startChat()">Start Chat</button>
+		</div>
+		<p class="uemessage"></p>
+	</div>
+	<div class="container" style="display: none;">
+		<div class="header">
+			<h1>NodeJS Chatting</h1>
+		</div>
+		<div class="chat-area">
+			<ul class="messages">
+			</ul>
+		</div>
+		<div class="inputs">
+			<input type="text" class="message-input">
+			<button onclick="send()" class="send-button">Send</button>
+		</div>
+	</div>
+
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="js/chat.js"></script>
+</body>
+</html>

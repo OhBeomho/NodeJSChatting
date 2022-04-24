@@ -1,0 +1,161 @@
+.usernameinput {
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+}
+
+.uinputs input {
+	background: rgba(0, 0, 0, 0.1);
+	border-left: 0;
+	border-right: 0;
+	border-top: 0;
+	border-bottom: 1;
+	border-bottom-color: rgb(220, 220, 220);
+	width: 200px;
+	height: 25px;
+}
+
+.uinputs input:hover {
+	border-bottom-color: rgb(200, 200, 200);
+}
+
+.uinputs button {
+	background: rgb(240, 240, 240);
+	border: 0;
+}
+
+.uinputs button:hover {
+	background: rgb(230, 230, 230);
+}
+
+.uinputs button:active {
+	background: rgb(200, 200, 200);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	height: 100%;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.header {
+	background: rgb(245, 245, 245);
+	flex: 0.3;
+	height: 100%;
+	padding: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.chat-area {
+	background: white;
+	flex: 5;
+	height: 100%;
+	width: 100%;
+	padding: 15px;
+	display: flex;
+	overflow-y: scroll;
+}
+
+.inputs {
+	background: rgb(220, 220, 220);
+	flex: 0.5;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	height: 100%;
+	width: 100%;
+}
+
+.message {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.content {
+	display: flex;
+	flex-direction: row;
+}
+
+.me .text {
+	padding: 5px;
+	margin: 10px;
+	font-size: 14px;
+	color: white;
+	background: rgb(40, 100, 255);
+	border-radius: 5px;
+}
+
+.other .text {
+	padding: 5px;
+	margin: 10px;
+	font-size: 14px;
+	background: rgb(240, 240, 240);
+	border-radius: 5px;
+}
+
+.profile-image img {
+	border-radius: 50%;
+}
+
+.time {
+	font-size: 10px;
+}
+
+.server .text {
+	color: gray;
+}
+
+.messages li {
+	width: 100%;
+	padding: 0.3rem;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-end;
+	margin-top: 0.1rem;
+}
+
+.profile {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+ul {
+	background: transparent;
+}
+
+.message-input {
+	width: 80%;
+	height: 60%;
+	border: 0;
+	border-radius: 3px;
+	background: rgb(240, 240, 240);
+}
+
+.send-button {
+	width: 10%;
+	height: 60%;
+	border: 0;
+	border-radius: 10px;
+	font-size: 16px;
+	background: rgb(190, 190, 190);
+}
+
+.uemessage {
+	color: red;
+}
